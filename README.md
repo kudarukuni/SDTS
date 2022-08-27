@@ -1,2 +1,2 @@
-# SAS
-The Smart Agriculture System
+# SDTS
+The Smart Drip-Tech System
