@@ -2,10 +2,10 @@ import serial
 import pymysql
 import time
 
-connection = pymysql.connect(host="localhost", user="root", passwd="", database="sims_db")
+connection = pymysql.connect(host="localhost", user="root", passwd="", database="sdts_db")
 cursor = connection.cursor()
 
-ser = serial.Serial('COM6', 115200)
+ser = serial.Serial('COM7', 115200)
 time.sleep(2)
 
 data = []
@@ -16,7 +16,7 @@ for i in range(50):
     print(string)
     data.append(string)
 
-    sql = 'INSERT INTO qrcodes(code, date, time) VALUES(%s, now(), now())'
+    sql = 'INSERT INTO waterlevel(level, date, time) VALUES(%s, now(), now())'
     
     cursor.execute(sql, b)
     connection.commit()
