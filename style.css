@@ -1,0 +1,25 @@
+body {
+	background-image: url("https://scx2.b-cdn.net/gfx/news/2017/1-newdesigncut.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	color: #000;
+	font-size: 1.8rem;
+	letter-spacing: -0.015em;
+	text-align: center;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	background: #666;
+	color: #FFF;
+	padding: 2px 6px;
+	border-collapse: separate;
+	border:  1px solid #000;
+}
