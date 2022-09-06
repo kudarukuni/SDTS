@@ -5,7 +5,7 @@ import time
 connection = pymysql.connect(host="localhost", user="root", passwd="", database="sdts_db")
 cursor = connection.cursor()
 
-ser = serial.Serial('COM7', 115200)
+ser = serial.Serial('COM4', 115200)
 time.sleep(2)
 
 data = []

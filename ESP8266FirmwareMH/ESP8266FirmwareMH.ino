@@ -26,7 +26,7 @@ void loop(){
   int s1 = analogRead(A0);
   
   if(s1 < 400){
-    Serial.println(s1);
+    Serial.println("LOW");
     digitalWrite(14, HIGH);
     delay(5000);
     digitalWrite(14, LOW);
@@ -43,6 +43,11 @@ void loop(){
     delay(5000);
   } 
   if(s1 > 400){
+    Serial.println("HIGH");
+    digitalWrite(14, HIGH);
+    delay(5000);
+    digitalWrite(14, LOW);
+    
     display.clearDisplay();
     display.setCursor(0, 0);
     display.setTextSize(1);

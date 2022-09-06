@@ -1,6 +1,9 @@
 # SDTS
 The Smart Drip-Tech System
 
+Download esp8266 boards
+Download SoftwareSerial, ADAFRUIT_GFX & ADAFRUIT_SSD1306
+
 OLED to ESP8266
 SCL - D1
 SDA - D2

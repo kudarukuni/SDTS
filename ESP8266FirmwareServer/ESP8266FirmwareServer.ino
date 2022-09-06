@@ -9,5 +9,5 @@ void setup(){
 
 void loop(){
   String msg = mySerial.readStringUntil('\r');
-  Serial.println(msg);
+Serial.println(msg);
 }
