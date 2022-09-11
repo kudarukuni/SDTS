@@ -39,7 +39,7 @@ void loop(){
   display.clearDisplay();
   display.setCursor(0, 25);
   display.print(distanceCm);
-  display.print(" cm");
+  display.println(" cm");
   display.display(); 
   delay(500);  
 }

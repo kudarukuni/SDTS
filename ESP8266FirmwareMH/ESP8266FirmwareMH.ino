@@ -26,7 +26,7 @@ void loop(){
   int s1 = analogRead(A0);
   
   if(s1 < 400){
-    Serial.println("LOW");
+    Serial.println(s1);
     digitalWrite(14, HIGH);
     delay(5000);
     digitalWrite(14, LOW);
@@ -34,10 +34,12 @@ void loop(){
     display.clearDisplay();
     display.setCursor(0, 0);
     display.setTextSize(1);
-    display.println("WATER LEVEL");
+    display.println("WATER TANK LEVEL");
     display.println();
     display.setTextSize(2); 
-    display.println("LOW");
+    display.print("LOW: ");
+    display.print(s1);
+    display.println("L");
     display.display();
     display.startscrollright(0x00, 0x00); 
     delay(5000);
@@ -51,10 +53,12 @@ void loop(){
     display.clearDisplay();
     display.setCursor(0, 0);
     display.setTextSize(1);
-    display.println("WATER LEVEL");
+    display.println("WATER TANK LEVEL");
     display.println();
     display.setTextSize(2); 
-    display.println("HIGH");
+    display.print("HIGH: ");
+    display.print(s1);
+    display.println("L");
     display.display();
     display.startscrollright(0x00, 0x00); 
     delay(5000);
